@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(134, 207, 207);
+}
+
+div{
+    height:50px;
+    width:100%;
+    background-color: black;
+}
+
+h1, h2{
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+p{
+    color: black;
+    font-size: 125%;
+}
+
+table{
+    width:100%;
+    border: solid brown 50px;
+}
+
+td{
+    text-align: center;
+    background-color: white;
+    border: solid black 3px;   
+}
+
+tr{
+    border: solid black 3px;
+    background-color: white;
+}

@@ -1,0 +1,58 @@
+body {
+    background-color: blanchedalmond;
+}
+
+p.ex{width:25%}
+p{color:aqua    }
+
+h1, h2, h3, h4{
+    color:yellow;
+    margin-left: 40px;
+}
+
+.yac {
+    color:cornflowerblue;
+    font-size:xx-large;
+}
+
+.centered{
+    text-align: center;
+}
+
+#propertied{
+    letter-spacing: 4px;
+}
+
+#redColored{
+    background-color:rgb(255,0,0);
+}
+div {
+    height:100px; width:50%;
+}
+#greenColored{
+    background-color:rgb(0,255,0)
+}
+
+table {
+    border:solid black 10px;
+    width:90%;
+    float:center;
+}
+
+td
+{
+    border: solid black 3px;
+    text-align: right;
+    padding:30px;
+    
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+tr:nth-child(odd){
+    background-color: purple;
+}
+
+tr{height:50px}

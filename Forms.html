@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forms</title>
+<script type="text/javascript">
+    function validateText(){
+        var inputText = document.getElementsById("textInputFilled").value;
+        var regex = /^[A-Z]{6}$/;
+        if(regex.test(inputText)){
+            document.getElementById("filledMessage").innerHTML = "Correct formatting";
+        }
+        else{
+            document.getElementById("filledMessage").innerHTML = "6 capital letters please";
+        }
+    }
+</script>
+</head>
+<body>
+
+<form action="form1">
+    Text Input: <br>
+    <input type="text" name="textInput" pattern="[A-Za-z]{4}" title="4 letter code" required> <br>
+    Filled Text Input: <br>
+    <input name="textInputFilled" type="text" value="FILLED" onblur="validateText()"> 
+    <span id="filledMessage"></span> <br>
+    <p style="color:blueviolet">Password Input: </p> <br>
+    <input type="password" name="password1"> <br>
+    Radio buttons: <br>
+    <input type="radio" name="buttons1" value="Option 1" checked> Option 1<br>
+    <input type="radio" name="buttons1" value="Option 2" checked> Option 2<br>
+    <input type="radio" name="buttons1" value="Option 3" checked> Option 3<br>
+
+    Checkboxes:
+    <input type="checkbox" name="check" value="1">
+    <input type="checkbox" name="check" value="2">
+    <input type="checkbox" name="check" value="3">
+
+    <br>
+    Number: 
+    <input type="number" name="numberSelect" min="-3" max="3">
+    <br>
+    Date:
+    <input type="date" name="userDate">
+    <br>Color:
+    <input type="color" name="userColor">
+
+
+    <br>
+    <input type="submit" value="Submit">
+    
+</form>
+
+</body>
+</html>
+
+<!--pattern with title, placeholder, readonly,  -->

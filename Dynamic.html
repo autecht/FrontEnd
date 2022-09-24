@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Website Using HTML</title>
+
+<script type="text/javascript">
+    function addText(){
+        document.getElementById("button").innerHTML = "You pressed the button";
+    }
+    function replicateSmall(){ // not sure how input works
+        userInput = document.getElementById("name").value;
+        if(userInput.length == 0){
+            document.getElementById("button").innerHTML = "No input";
+        }
+        else{
+            document.getElementById("button").innerHTML = userInput;
+        }
+    }
+
+    function alertUsingInput(){
+        var userInput = document.getElementById("numberInput").value;
+        alert("You typed the number " + userInput);
+    }
+
+    function displayPromptWithName(){
+        var promptInput = prompt("Hello", "Hi there");
+        document.getElementById("fill in").innerHTML = "We started a conversation!"
+
+    }
+</script>
+</head>
+<body>
+
+<input id="name" type="text"/> 
+<button onclick="replicateSmall()">Press!</button>
+
+<p id="button" style="font-size:10%"></p> <br>
+
+<p>Type a number: </p><input id="numberInput" type="number"/>
+<button onclick="alertUsingInput()">And Press Me!</button>
+
+<button onclick="displayPromptWithName()">Prompt Button</button>
+<p id="fill in"></p>
+
+</body>
+</html>
+<!--events: onload, onblur, span-->
